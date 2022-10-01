@@ -1,0 +1,120 @@
+:root{
+    /* Colors */
+
+    /* Primary */
+    --primaryModerateViolet:hsl(263, 55%, 52%);
+    --primaryVeryDarkGrayishBlue:hsl(217, 19%, 35%);
+    --primaryVeryDarkBlackishBlue:hsl(219, 29%, 14%);
+    --white:hsl(0, 0%, 100%);
+
+    /* Neutrals */
+    --neutralLightGray:hsl(0, 0%, 81%);
+    --neutralLightGrayishBlue:hsl(210, 46%, 95%);
+
+    /* Font */
+    --font:'Barlow Semi Condensed', sans-serif;
+}
+
+/* Globlals */
+html{
+    box-sizing: border-box;
+    font-size:  62.5%;
+    height: 100%;
+    
+}
+
+*, *:before, *:after{
+    box-sizing: inherit;
+
+}
+
+
+body{
+    height: 100vh;
+    background-color: var(--neutralLightGrayishBlue);
+    font-family: var(--font);
+}
+
+
+/* Container */
+
+.container{
+    padding: 15rem;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-areas: 
+    "card1 card1 card2 card3"
+    "card4 card5 card5 card3";
+    gap: 3rem;
+    
+}
+.card{
+    
+    border-radius: 1rem;
+    padding: 2.5rem 4rem;
+}
+
+.card h1,
+.card p{
+    color: var(--neutralLightGrayishBlue);
+}
+.card h1{
+    font-size: 1.9rem;
+}
+
+.card p{
+    font-size: 1.5rem;
+    opacity: 70%;
+}
+.profile{
+    display: flex;
+    gap: 2rem;
+}
+.profile h1{
+   font-size: 1.8rem;
+}
+.profile--info p{
+    opacity: 50%;
+    font-size: 1.5rem;
+    font-weight: 300;
+
+}
+.profile--info h1,
+.profile--info p{
+    color: var(--neutralLightGrayishBlue);
+    
+    margin: 0;
+}
+.profile--logo{
+    
+}
+.profile--logo img{
+    border-radius: 5rem;
+    width: 3.5rem;
+   
+    
+}
+.card1{
+    background-image: url(../images/bg-pattern-quotation.svg);
+    background-repeat: no-repeat;
+    background-position-x: 76%;
+    background-color:var(--primaryModerateViolet) ;
+    grid-area: card1;
+}
+
+.card2{
+    background-color: var(--primaryVeryDarkGrayishBlue);
+    grid-area: card2;
+}
+.card3{
+    background-color: white ;
+    grid-area: card3;
+}
+.card4{
+    background-color: white;
+    grid-area: card4;
+}
+.card5{
+    background-color: var(--primaryVeryDarkBlackishBlue);
+    grid-area: card5;
+}
