@@ -1,0 +1,289 @@
+
+.container{
+    padding: 2rem;      
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: .8fr 1fr 1fr .9fr .8fr .8fr .8fr 1fr;
+    grid-template-areas: 
+    "card1"
+    "card1"
+    "card2"
+    "card4"
+    "card5"
+    "card5"
+    "card3"
+    "card3";
+    gap: 3rem;
+    
+}
+
+.card1{
+    grid-area: card1;
+}
+.card2{
+    grid-area: card2;
+}
+.card3{
+    grid-area: card3;    
+}
+.card4{
+    grid-area: card4;
+}
+.card5{
+    grid-area: card5;
+    height: 40rem;
+}
+
+
+/* Cards */
+.card{
+    
+    border-radius: 1rem;
+    padding: 2.5rem 3.5rem 0 3.5rem;
+}
+
+.card h1,
+.card p{
+    color: var(--neutralLightGrayishBlue);
+}
+.card h1{
+    font-size: 1.9rem;
+}
+
+.card p{
+    font-size: 1.5rem;
+    opacity: 70%;
+}
+/* Profile */
+.profile{
+    display: flex;
+    gap: 1.5rem;
+}
+.profile h1{    
+   font-size: 1.3rem;
+   margin: 0;
+}
+
+.profile--info p{
+    opacity: 50%;
+    font-size: 1.1rem;
+    margin: .3rem 0 0 0;  
+}
+.profile--info h1,
+.profile--info p{
+    color: var(--neutralLightGrayishBlue);  
+}
+
+.profile--logo img{
+    border-radius: 5rem;
+    width: 2.8rem;
+    border: .1rem var(--primaryModerateViolet) solid;     
+}
+
+/* Card 1 */
+.card1{
+    background-image: url(../images/bg-pattern-quotation.svg);
+    background-repeat: no-repeat;
+    background-position-x: 78%;
+    background-color:var(--primaryModerateViolet) ;
+    grid-area: card1;
+}
+/* Card text */
+.card__text{
+    margin-top: 1.8rem;
+}
+
+.card__text h1{
+    margin-top: 1rem;
+    font-size: 2rem;
+    line-height: 1.3;
+}
+.card__text p{
+    font-size: 1.3rem;
+    line-height: 1.5;
+    opacity: 70%;
+    margin-top: 1rem;
+}
+.card__text1{
+   margin: 2rem 0 3rem 0;
+}
+/* Card 2 */
+.card2{
+    background-color: var(--primaryVeryDarkGrayishBlue);
+    grid-area: card2;
+}
+/* Card 3 */
+.card3{
+    background-color: white ;
+    grid-area: card3;
+    padding: 2.5rem 3.5rem 0 3.5rem;
+}
+
+.profile--info3 h1,
+.profile--info3 p,
+.card__text3 h1,
+.card__text3 p{
+    color: var(--primaryVeryDarkGrayishBlue);
+    
+}
+.card__text3 p{
+    opacity: 70%;
+    font-size: 1.3rem;
+    margin: 0;
+    line-height: 1.4;
+}
+/* Card 4 */
+
+.card4{
+    background-color: white;
+    grid-area: card4;
+}
+/* Card 5 */
+.c5 p{
+    margin:0 0 0 0;
+}
+.card5{
+    background-color: var(--primaryVeryDarkBlackishBlue);
+    grid-area: card5;
+}
+.card__text5{
+    margin: 2rem 0 0 0 ;
+}
+
+
+@media (min-width: 768px) {
+    /* Container */
+
+.container{
+    width: 111rem;
+    height: 58rem;    
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: auto;
+    grid-template-areas: 
+    "card1 card1 card2 card3"
+    "card4 card5 card5 card3";
+    gap: 3rem;
+    
+}
+
+
+/* Cards */
+.card{
+    
+    border-radius: 1rem;
+    padding: 2.5rem 3.5rem 0 3.5rem;
+    height: 29rem;
+}
+
+.card h1,
+.card p{
+    color: var(--neutralLightGrayishBlue);
+}
+.card h1{
+    font-size: 1.9rem;
+}
+
+.card p{
+    font-size: 1.5rem;
+    opacity: 70%;
+}
+/* Profile */
+.profile{
+    display: flex;
+    gap: 1.5rem;
+}
+.profile h1{    
+   font-size: 1.3rem;
+   margin: 0;
+}
+
+.profile--info p{
+    opacity: 50%;
+    font-size: 1.1rem;
+    margin: .3rem 0 0 0;  
+}
+.profile--info h1,
+.profile--info p{
+    color: var(--neutralLightGrayishBlue);  
+}
+
+.profile--logo img{
+    border-radius: 5rem;
+    width: 2.8rem;
+    border: .1rem var(--primaryModerateViolet) solid;     
+}
+
+/* Card 1 */
+.card1{
+    background-image: url(../images/bg-pattern-quotation.svg);
+    background-repeat: no-repeat;
+    background-position-x: 78%;
+    background-color:var(--primaryModerateViolet) ;
+    grid-area: card1;
+}
+/* Card text */
+.card__text{
+    margin-top: 1.8rem;
+}
+
+.card__text h1{
+    margin-top: 1rem;
+    font-size: 1.9rem;
+    line-height: 1.3;
+}
+.card__text p{
+    font-size: 1.3rem;
+    line-height: 1.5;
+    opacity: 50%;
+    margin-top: 1rem;
+}
+.card__text1{
+   margin: 2rem 0 3rem 0;
+}
+/* Card 2 */
+.card2{
+    background-color: var(--primaryVeryDarkGrayishBlue);
+    grid-area: card2;
+}
+/* Card 3 */
+.card3{
+    background-color: white ;
+    grid-area: card3;
+    padding: 2.5rem 3.5rem 0 3.5rem;
+    height: 61rem;
+}
+
+.profile--info3 h1,
+.profile--info3 p,
+.card__text3 h1,
+.card__text3 p{
+    color: var(--primaryVeryDarkGrayishBlue);
+    
+}
+.card__text3 p{
+    opacity: 70%;
+    font-size: 1.3rem;
+    margin: 0;
+    line-height: 1.4;
+}
+/* Card 4 */
+
+.card4{
+    background-color: white;
+    grid-area: card4;
+    height: 29rem;
+}
+/* Card 5 */
+.c5 p{
+    margin:0 0 0 0;
+}
+.card5{
+    background-color: var(--primaryVeryDarkBlackishBlue);
+    grid-area: card5;
+}
+.card__text5{
+    margin: 2rem 0 0 0 ;
+}
+}
+
