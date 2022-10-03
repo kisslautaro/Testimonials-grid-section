@@ -49,7 +49,7 @@ body{
     gap: 3rem;
     
 }
-
+/* Cards */
 .card{
     border-radius: 1rem;
     padding: 2.5rem 2.5rem 0 2.5rem;    
@@ -77,6 +77,8 @@ body{
 .whitexl{
     height: 45rem;
 }
+
+/* Profile */
 .profile{
     display: flex;
     gap: 1.5rem;
@@ -107,7 +109,7 @@ body{
     font-size: 1.1rem;
     margin: .3rem 0 0 0; 
 }
-
+/* Card text */
 .card__text--light{
     color: var(--white);
     margin: 1.8rem 0 0 0;
@@ -138,6 +140,7 @@ body{
 
 
 @media (min-width: 768px) {
+    /* Container */
     .container{
         width: 111rem;
         height: 58rem;    
@@ -149,7 +152,7 @@ body{
         "whites graydark graydark whitexl";
         gap: 3rem;
     }
-
+    /* br */
     .purple br,
     .gray br,
     .graydark br,
@@ -159,6 +162,7 @@ body{
     .whites span{
         display: none;
     }
+    /* Cards */
     .purple{
        grid-area: purple;
        height: 29rem;
